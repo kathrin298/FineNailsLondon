@@ -14,6 +14,9 @@ gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+gem 'spree', '~> 4.1'
+gem 'spree_auth_devise', '~> 4.1'
+gem 'spree_gateway', '~> 3.7'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
