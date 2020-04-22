@@ -15,6 +15,8 @@ Spree.config do |config|
   # config.track_inventory_levels = false
   config.logo = 'Navbar logo.png'
   config.admin_interface_logo = 'Navbar logo.png'
+  config.layout = 'spree/layouts/spree_application'
+  #config.site_name = 'FineNailsLondon'
 end
 
 # Configure Spree Dependencies
