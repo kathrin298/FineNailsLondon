@@ -1,10 +1,10 @@
 <% if spree_navigation_data.any? %>
   <ul id= "nav-bar" class="nav main-nav-bar justify-content-center">
-      <!-- include links to other pages other than categories -->
-      <li class="navbar main-nav-bar-dropdown">
-        <a href=<%= spree.products_path %>>Shop</a>
+      <!-- HOME LINK -->
+      <li class="navbar main-nav-bar-dropdown main-nav-bar-category">
+        <a class= "p-2 main-nav-bar-category-button main-nav-bar-item" href=<%= spree.root_path %>>HOME</a>
       </li>
-    <!-- category links -->
+    <!-- SHOP links -->
     <% spree_navigation_data.each do |root| %>
       <li class="navbar main-nav-bar-dropdown main-nav-bar-category">
         <%= link_to root[:title], root[:url], class: "p-2 main-nav-bar-item main-nav-bar-category-button" %>
@@ -51,6 +51,10 @@
         <%end %>
       </li>
     <% end %>
+    <!-- ABOUT LINK -->
+    <li class="navbar main-nav-bar-dropdown main-nav-bar-category">
+      <a class= "p-2 main-nav-bar-category-button main-nav-bar-item" href=<%= spree.root_path %>>ABOUT US</a>
+    </li>
     <!-- symbols for search,user,cart -->
     <li>
       <div class="navbar-right-search-menu">
