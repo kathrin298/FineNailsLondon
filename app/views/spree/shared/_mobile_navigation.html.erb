@@ -35,6 +35,9 @@
     </div>
 
     <ul class="list-unstyled position-relative h-100 mobile-navigation-list">
+      <li class="d-flex justify-content-between align-items-center mobile-navigation-list-item">
+        <a class= "w-75" href=<%= spree.root_path %>>Home</a>
+      </li>
       <% spree_navigation_data.each do |root| %>
         <li class="d-flex justify-content-between align-items-center mobile-navigation-list-item">
           <%= link_to root[:title], root[:url], class: 'w-75' %>
@@ -68,6 +71,9 @@
           </ul>
         </li>
       <% end %>
+      <li class="d-flex justify-content-between align-items-center mobile-navigation-list-item">
+        <a class= "w-75" href=<%= spree.root_path %>>About</a>
+      </li>
     </ul>
   </div>
 <% end %>

@@ -1,7 +1,5 @@
 // Graphical variables
-@import "config/fonts";
 @import "config/colors";
-@import "config/bootstrap_variables";
 
 // External libraries
 @import "bootstrap/scss/bootstrap";
@@ -9,8 +7,6 @@
 @import "font-awesome";
 
 // Your CSS partials
-@import "components/index";
-@import "pages/index";
 @import "spree/frontend/variables/variables";
 @import "spree/frontend/variables/bootstrap-overrides";
 @import "spree/frontend/variables/helper-variables";
@@ -21,6 +17,8 @@
 @import "spree/frontend/mixins";
 @import "spree/frontend/functions";
 @import "spree/frontend/margins";
+@import "config/fonts";
+@import "config/bootstrap_variables";
 
 @import "spree/frontend/components-bootstrap/carousel";
 @import "spree/frontend/components-bootstrap/button";
@@ -67,5 +65,7 @@
 @import "spree/frontend/views/spree/shared/dropdown";
 @import "spree/frontend/views/spree/shared/delete_address_popup";
 
-
+// my own overrides
+@import "components/index";
+@import "pages/index";
 

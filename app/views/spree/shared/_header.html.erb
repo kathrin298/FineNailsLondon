@@ -1,7 +1,7 @@
 <%# leaving #spree-header div for legacy support  %>
 <% cache spree_nav_cache_key('header') do %>
   <div id="spree-header" data-turbolinks-permanent>
-    <header id="header" class="d-flex align-items-center header-spree border-bottom">
+    <header id="header" class="d-flex align-items-center header-spree">
       <div class="container-fluid h-100 header-spree-fluid">
         <div class="flex-nowrap align-items-center h-100">
           <div class="d-xl-none flex-grow-1 header-spree-fluid-mobile-menu-toggler">
@@ -17,7 +17,7 @@
           <div id="main-nav-bar" class="flex-grow-0 d-none d-xl-block h-100 header-spree-fluid-primary-navigation">
             <%= render partial: 'spree/shared/main_nav_bar' %>
           </div>
-          <div id="top-nav-bar" class="flex-grow-1 header-spree-fluid-secondary-navigation">
+          <div id="top-nav-bar" class="d-xl-none flex-grow-1 header-spree-fluid-secondary-navigation">
             <%= render partial: 'spree/shared/nav_bar' %>
           </div>
           <%= render partial: 'spree/shared/mobile_navigation' %>

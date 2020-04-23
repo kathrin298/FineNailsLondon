@@ -7,36 +7,26 @@
 
 @media (min-width: 1200px) {
   .logo > a > img { max-height: 100px; }
+  #nav-bar > li {  padding: 0.2rem 1rem; }
 }
 
 @media (min-width: 576px) {
   .logo > a > img { max-height: 100px; }
 }
 
-// old CSS for navbar
-// .navbar-finenails {
-//   justify-content: space-between;
-//   background: white;
-//   text-align: center;
-// }
+@media (max-width: 1200px) {
+  #header > div > div { display: flex }
+}
 
-// .navbar-finenails .navbar-collapse {
-//   flex-grow: 0;
-// }
+#nav-bar > li {
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 
-// .navbar-logo img {
-//   width: 200px;
-//   text-align: center;
-// }
-
-// .dropdown-menu {
-//   border: 1px solid $dark-gold;
-// }
-
-// .nav-item.dropdown img {
-//   margin-left: 10px;
-// }
-
-// .navbar-nav {
-//   margin: 0 auto;
-// }
+.main-nav-bar-item {
+  font-size: 18px;
+}
