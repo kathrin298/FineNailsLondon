@@ -5,17 +5,36 @@
   max-width:200px;
 }
 
+.header-spree-fluid-secondary-navigation { flex-basis: 0; }
+
 @media (min-width: 1200px) {
   .logo > a > img { max-height: 100px; }
-  #nav-bar > li {  padding: 0.2rem 1rem; }
+
+  .header-spree-fluid-logo { flex-basis: auto; }
+
+  #nav-bar > li { padding: 0.2rem 1rem; }
+
+  #header > div > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #header > div > div > .logo { width: 1200px; }
 }
 
-@media (min-width: 576px) {
-  .logo > a > img { max-height: 100px; }
-}
+@media (min-width: 576px) { .logo > a > img { max-height: 100px; } }
 
 @media (max-width: 1200px) {
-  #header > div > div { display: flex }
+  // #header > div > div {
+  //   // flex-direction: column;
+
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  // }
+
+  // .logo {
+  //   width: 1200px;
+  // }
 }
 
 #nav-bar > li {
