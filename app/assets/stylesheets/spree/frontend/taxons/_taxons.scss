@@ -1,0 +1,17 @@
+.taxon-title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.taxon-icon img {
+  height: 200px;
+}
+
+.taxon-subcategories > a:hover {
+  text-decoration: none;
+}
+
+.taxon-subcategories-selected {
+  border-bottom-width: 3px;
+}
