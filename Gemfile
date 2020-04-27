@@ -17,6 +17,7 @@ gem 'webpacker'
 gem 'spree', '~> 4.1'
 gem 'spree_auth_devise', '~> 4.1'
 gem 'spree_gateway', '~> 3.7'
+gem 'spree_wishlist', github: 'spree-contrib/spree_wishlist', branch: 'master'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
