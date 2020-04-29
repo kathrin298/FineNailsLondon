@@ -48,10 +48,12 @@
       </td>
     <% end -%>
       <td>
-        <% if variant.images.length == 0 %>
-          <%= small_image(variant.product) %>
-        <% else %>
-          <%= image_tag variant.images.first.attachment.url(:small) %>
+        <%= unless variant.images.empty? %>
+          <% if variant.images.length == 0 %>
+            <%= small_image(variant.product) %>
+          <% else %>
+            <%= image_tag variant.images.first.attachment.url(:small) %>
+          <% end %>
         <% end %>
       </td>
       <td>
