@@ -13,7 +13,6 @@
       <% if @wishlist.user == spree_current_user %>
         <th><%= Spree.t(:wishlist_actions) %></th>
       <% end %>
-      <th><%= Spree.t(:item_view) %></th>
       <th><%= Spree.t(:item_description) %></th>
       <th><%= Spree.t(:availability) %></th>
       <th><%= Spree.t(:date_added) %></th>
@@ -47,15 +46,7 @@
         <br />
       </td>
     <% end -%>
-      <td>
-        <%= unless variant.images.empty? %>
-          <% if variant.images.length == 0 %>
-            <%= small_image(variant.product) %>
-          <% else %>
-            <%= image_tag variant.images.first.attachment.url(:small) %>
-          <% end %>
-        <% end %>
-      </td>
+
       <td>
         <h4><%= link_to product.name, product %></h4>
         <p><%= variant.options_text %></p>
