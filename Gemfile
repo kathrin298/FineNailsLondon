@@ -21,6 +21,7 @@ gem 'spree_wishlist', github: 'spree-contrib/spree_wishlist', branch: 'master'
 gem 'aws-sdk-s3', require: false
 gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express'
 gem 'sass-rails'
+gem 'spree_related_products', github: 'spree-contrib/spree_related_products'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
