@@ -9,3 +9,4 @@
 <%= render 'spree/shared/paths' %>
 <%= javascript_include_tag 'spree/frontend/all', defer: true, 'data-turbolinks-track': 'reload' %>
 <%= yield :head %>
+<%= MailchimpHelper.mailchimp_snippet %>

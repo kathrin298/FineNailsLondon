@@ -1,4 +1,16 @@
 GIT
+  remote: https://github.com/spark-solutions/spree_mailchimp_ecommerce.git
+  revision: b2b259fff72488699c336d20f5bae30a1857ad3b
+  branch: master
+  specs:
+    spree_mailchimp_ecommerce (1.0.2)
+      deface
+      gibbon (~> 3.3)
+      spree_backend (>= 3.3.0, < 5.0)
+      spree_core (>= 3.3.0, < 5.0)
+      spree_extension
+
+GIT
   remote: https://github.com/spree-contrib/better_spree_paypal_express.git
   revision: 49c579ac7eb968bba67b97126bd4473f709174ad
   specs:
@@ -159,6 +171,8 @@ GEM
       railties (>= 3.2, < 6.1)
     erubi (1.9.0)
     execjs (2.7.0)
+    faraday (1.0.1)
+      multipart-post (>= 1.2, < 3)
     fast_jsonapi (1.5)
       activesupport (>= 4.2)
     ffaker (2.14.0)
@@ -167,6 +181,9 @@ GEM
       sassc (>= 1.11)
     friendly_id (5.3.0)
       activerecord (>= 4.0.0)
+    gibbon (3.3.3)
+      faraday (>= 0.16.0)
+      multi_json (>= 1.11.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     glyphicons (1.0.2)
@@ -223,6 +240,7 @@ GEM
       i18n (>= 0.6.4, <= 2)
     msgpack (1.3.3)
     multi_json (1.14.1)
+    multipart-post (2.1.1)
     nio4r (2.5.2)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
@@ -466,6 +484,7 @@ DEPENDENCIES
   spree (~> 4.1)
   spree_auth_devise (~> 4.1)
   spree_gateway (~> 3.7)
+  spree_mailchimp_ecommerce!
   spree_paypal_express!
   spree_related_products!
   spree_wishlist!
