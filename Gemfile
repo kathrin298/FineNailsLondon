@@ -23,6 +23,7 @@ gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express'
 gem 'sass-rails'
 gem 'spree_related_products', github: 'spree-contrib/spree_related_products'
 gem 'spree_mailchimp_ecommerce', github: 'spark-solutions/spree_mailchimp_ecommerce', branch: 'master'
+gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

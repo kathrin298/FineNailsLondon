@@ -74,6 +74,7 @@
       <li class="d-flex justify-content-between align-items-center mobile-navigation-list-item">
         <a class= "w-75" href=<%= spree.root_path %>>About</a>
       </li>
+      <%= render partial: 'spree/static_content/static_content_list_mobile', collection: Spree::Page.by_store(current_store).visible.header_links, as: :page %>
     </ul>
   </div>
 <% end %>
