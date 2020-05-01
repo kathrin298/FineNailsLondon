@@ -1,3 +1,13 @@
 .homepage-hero-image-text {
   color: white;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .homepage-hero-image-text { font-size: 2rem; }
+}
+
+.homepage-hero-image .hero-content {
+  left: 10%;
+  right: unset;
 }
