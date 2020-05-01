@@ -2,12 +2,12 @@
   <ul id="nav-bar" class="nav main-nav-bar justify-content-center">
       <!-- HOME LINK -->
       <li class="navbar main-nav-bar-dropdown main-nav-bar-category">
-        <a class= "px-2 main-nav-bar-category-button main-nav-bar-item" href=<%= spree.root_path %>>HOME</a>
+        <a class= "px-2 pb-2 main-nav-bar-category-button main-nav-bar-item" href=<%= spree.root_path %>>HOME</a>
       </li>
     <!-- SHOP links -->
     <% spree_navigation_data.each do |root| %>
       <li class="d-none d-lg-flex navbar main-nav-bar-dropdown main-nav-bar-category">
-        <%= link_to root[:title], root[:url], class: "px-2 main-nav-bar-item main-nav-bar-category-button" %>
+        <%= link_to root[:title], root[:url], class: "px-2 pb-2 main-nav-bar-item main-nav-bar-category-button" %>
         <% if root[:items].present? || root[:promo_banners].present? %>
           <div class="w-100 shadow main-nav-bar-category-dropdown">
             <div class="container p-0 d-flex justify-content-xl-around mx-auto">
@@ -53,7 +53,7 @@
     <% end %>
     <!-- ABOUT LINK -->
     <li class="navbar main-nav-bar-dropdown main-nav-bar-category">
-      <a class= "px-2 main-nav-bar-category-button main-nav-bar-item" href=<%= spree.about_path %>>ABOUT US</a>
+      <a class= "px-2  pb-2 main-nav-bar-category-button main-nav-bar-item" href=<%= spree.about_path %>>ABOUT US</a>
     </li>
   </ul>
 <% end %>
