@@ -24,6 +24,8 @@ gem 'sass-rails'
 gem 'spree_related_products', github: 'spree-contrib/spree_related_products'
 gem 'spree_mailchimp_ecommerce', github: 'spark-solutions/spree_mailchimp_ecommerce', branch: 'master'
 gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
+gem 'mail_form'
+gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
