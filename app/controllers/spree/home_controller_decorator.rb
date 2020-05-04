@@ -1,6 +1,6 @@
-# require 'spree/base_controller'
 module Spree
-  HomeController.class_eval do
+  # HomeController.class_eval do
+  module HomeControllerDecorator
     def contact
       @contact = Contact.new(params[:contact])
     end
