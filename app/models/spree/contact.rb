@@ -9,7 +9,7 @@ module Spree
     def headers
       {
         :subject => "Contact Form Inquiry",
-        :to => "kat.wanderdust@gmail.com",
+        :to => "finenailslondon@gmail.com",
         :from => %("#{name}" <#{email}>)
       }
     end
