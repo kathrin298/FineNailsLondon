@@ -55,6 +55,9 @@
     <li class="navbar main-nav-bar-dropdown main-nav-bar-category">
       <a class= "px-2 pb-2 main-nav-bar-category-button main-nav-bar-item" href=<%= spree.about_path %>>ABOUT US</a>
     </li>
+    <li class="navbar main-nav-bar-dropdown main-nav-bar-category">
+      <a class= "px-2 pb-2 main-nav-bar-category-button main-nav-bar-item" href=<%= spree.contact_path %>>CONTACT</a>
+    </li>
     <%= render partial: 'spree/static_content/static_content_list_header', collection: Spree::Page.by_store(current_store).visible.header_links, as: :page %>
   </ul>
 <% end %>
