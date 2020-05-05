@@ -1,5 +1,8 @@
 #about {
-  background-color: $pink;
+  background-image: url("/assets/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: 100vh;
 }
 
 .about-LFN-text, .about-Fine-text {
