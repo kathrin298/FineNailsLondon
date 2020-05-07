@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   Spree::Core::Engine.routes.draw do
     get 'about', to: 'home#about'
+    get 'values', to: 'home#values'
     get 'contact', to: 'home#contact'
     resources :contacts, only: [:new, :create]
   end
