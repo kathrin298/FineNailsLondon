@@ -198,4 +198,77 @@
   }
 }
 
+// Third value section
+// phone screens
+.value-3-container {
+    grid-template-columns: 90%;
+    grid-template-rows: 1rem auto auto auto;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
 
+  .value-3a-img {
+    // height: 40vh;
+    width: 60%;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    justify-self: center;
+  }
+
+   .value-3b-img {
+    width: 100%;
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+
+  .value-heading.value-3 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    z-index: 1;
+
+    p {
+      width: 50vw;
+    }
+  }
+
+  .value-content.value-3 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+
+// landscape tablets, laptops and larger screens
+@media only screen and (min-width: 768px) {
+  .value-3-container {
+    grid-template-columns: 200px 50px 150px 385px;
+    grid-template-rows: 30px auto auto auto;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .value-3a-img {
+    width: 250px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 4;
+  }
+
+   .value-3b-img {
+    width: 385px;
+    grid-column: 4 / span 1;
+    grid-row: 4 / span 1;
+  }
+
+  .value-heading.value-3 {
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 1;
+    z-index: 1;
+
+    p {
+      width: unset;
+    }
+  }
+
+  .value-content.value-3 {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 1;
+  }
+}
