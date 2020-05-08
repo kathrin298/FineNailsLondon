@@ -88,7 +88,7 @@
 // landscape tablets, laptops and larger screens
 @media only screen and (min-width: 768px) {
   .value-1-container {
-    grid-template-columns: 235px 50px 60%;
+    grid-template-columns: 235px 50px 50%;
     grid-template-rows: 24px 44px auto;
     justify-content: center;
     margin-bottom: 12rem;
@@ -236,23 +236,23 @@
     grid-row: 3 / span 1;
   }
 
-// landscape tablets, laptops and larger screens
-@media only screen and (min-width: 768px) {
+// tablets and large phone screens
+@media only screen and (min-width: 576px) {
   .value-3-container {
-    grid-template-columns: 200px 50px 150px 385px;
+    grid-template-columns: 150px 50px 150px 300px;
     grid-template-rows: 30px auto auto auto;
     justify-content: center;
     margin-bottom: 4rem;
   }
 
   .value-3a-img {
-    width: 250px;
+    width: 200px;
     grid-column: 1 / span 2;
     grid-row: 1 / span 4;
   }
 
    .value-3b-img {
-    width: 385px;
+    width: 300px;
     grid-column: 4 / span 1;
     grid-row: 4 / span 1;
   }
@@ -270,5 +270,20 @@
   .value-content.value-3 {
     grid-column: 3 / span 2;
     grid-row: 3 / span 1;
+  }
+}
+
+// landscape tablets, laptops and larger screens
+@media only screen and (min-width: 769px) {
+  .value-3-container {
+    grid-template-columns: 200px 50px 150px 385px;
+  }
+
+  .value-3a-img {
+    width: 250px;
+  }
+
+   .value-3b-img {
+    width: 385px;
   }
 }
