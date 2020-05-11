@@ -1,1 +1,14 @@
-// Specific CSS for your home-page
+.value-card {
+  height: 300px;
+  position: relative;
+}
+
+.value-card-text-container {
+  width: 80%;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+}
