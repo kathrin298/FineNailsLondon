@@ -20,7 +20,7 @@
 }
 
 .value-text-container {
-  width: 600px;
+  // width: 600px;
   position: relative;
   background-color: white;
 }
@@ -54,7 +54,8 @@
   font-weight: bold;
 }
 
-.value-1 {
+.value-1,
+.value-3 {
   right: 100px;
 }
 
@@ -62,8 +63,28 @@
   left: 120px;
 }
 
-.value-3 {
-  right: 100px;
+// min-width: 576px
+
+@media (min-width: 768px) {
+  .value-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .value-text-container {
+    width: 484px;
+  }
+
+  .value-2 {
+    left: unset;
+  }
+}
+
+@media (min-width: 1280px) {
+  .value-container {
+    width: 1280px;
+    margin: 0 auto;
+  }
 }
 
 // .value-1-container,

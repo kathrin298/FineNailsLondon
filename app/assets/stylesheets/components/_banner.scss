@@ -13,7 +13,6 @@
 }
 
 .plain-banner {
-  // height: 50vh;
   background-color: $light-beige;
 }
 
@@ -27,6 +26,28 @@
   margin: 0 auto;
   font-family: 'Playfair Display', serif;
   font-size: 5rem;
+}
+
+@media (min-width: 320px) {
+  .plain-banner-info {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .plain-banner-info h1 {
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  }
+  .plain-banner-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .plain-banner-info h1 {
+    width: 80%;
+  }
 }
 
 .plain-banner-info p {
